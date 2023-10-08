@@ -1,1 +1,0 @@
-{"mappings":"AACAA,QAAQC,IADM","sources":["src/index.js"],"sourcesContent":["const value = 10;\nconsole.log(value);"],"names":["console","log"],"version":3,"file":"index.fdcdb447.js.map"}
