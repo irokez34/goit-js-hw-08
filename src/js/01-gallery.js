@@ -1,6 +1,5 @@
 
 import SimpleLightbox from "simplelightbox";
-
 import "simplelightbox/dist/simple-lightbox.min.css";
 import { galleryItems } from "./gallery-items";
 
@@ -13,18 +12,6 @@ const makrup = galleryItems.map(({preview, original, description}) => {
   </a>
 </li>`}).join('');
   galleryEl.insertAdjacentHTML('afterbegin',makrup);
-  
-  
-  galleryEl.addEventListener('click', modalOpen)
-
-
-
-  function modalOpen(evt) {
-    const target = evt.target;
-    evt.preventDefault();
-    if (target === evt.currentTarget) {
-      return;
-    }
      const gallery = new SimpleLightbox('.gallery a',{
       captionsData: 'alt', 
       captionDelay: 250,
@@ -35,4 +22,4 @@ const makrup = galleryItems.map(({preview, original, description}) => {
       overlayOpacity: 0.2,
     })
     
-  }
+ 
